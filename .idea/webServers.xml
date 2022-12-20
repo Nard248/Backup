@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="44817941-9fc4-4c3d-8d15-0ea2720262c7" name="onex">
+        <fileTransfer accessType="SFTP" host="164.92.124.254" port="2270" sshConfigId="c8ff898a-2568-4c89-b43b-6851b31ae800" sshConfig="root@164.92.124.254:2270 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
