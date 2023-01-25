@@ -36,13 +36,13 @@ def detect_text(path):
                 response_json['address'] = 'Ok'
             alt = text_.replace(' ', '')
             f.write(text_ + "Split" + alt +'\n')
-            if ('RU' in text_ or 'RU' in alt) and len(text_) == 8 and text_.replace('RU', '').isnumeric():
-                response_json['user_code'] = text_
-                response_json['country_code'] = 'RU'
-            elif (('ARM' in text_ or 'ARM' in alt) and len(text_) == 9 and text_.replace('ARM', '').isnumeric()) or (
+            if (('ARM' in text_ or 'ARM' in alt) and len(text_) == 9 and text_.replace('ARM', '').isnumeric()) or (
                     'ARM' in text_ and 'c' in text_ and len(text_) == 10 and text_.replace('ARMc', '').isnumeric()) :
                 response_json['user_code'] = text_
                 response_json['country_code'] = 'ARM'
+            elif ('RU' in text_ or 'RU' in alt) and len(text_) == 8 and text_.replace('RU', '').isnumeric():
+                response_json['user_code'] = text_
+                response_json['country_code'] = 'RU'
             elif ('GE' in text_ or 'GE' in alt) and len(text_) == 7 and 'POSTAGE' not in text_ and text_.replace('GE', '').isnumeric():
                 response_json['user_code'] = text_
                 response_json['country_code'] = 'GE'
